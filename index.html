@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafaqat Editors AI – Free AI Tools for YouTubers, Video Editors and Creators</title>
+<meta name="description" content="Rafaqat Editors AI: free AI chat in Hindi, Urdu and English, YouTube title, hashtag, script and caption generators, plus a photo editor, slideshow video maker and text to speech.">
+<meta name="keywords" content="Rafaqat Editors AI, Rafaqat AI, Rafaqat Editors, AI tools for creators, YouTube title generator, hashtag generator, video script generator, AI chat Hindi Urdu, free photo editor online, slideshow video maker, text to speech Hindi Urdu">
+<meta name="theme-color" content="#050a18"><meta property="og:type" content="website"><meta property="og:description" content="Smart AI Tools for Creators"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Rafaqat Editors AI","description":"Smart AI Tools for Creators: AI chat, YouTube title and hashtag generators, photo editor, video maker and voice maker.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<link rel="icon" href="logo.png"><meta property="og:title" content="Rafaqat Editors AI"><meta property="og:image" content="banner.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050a18;--panel:#0b1226;--line:#1f2a48;--text:#eef1fa;--mute:#98a2bd;--a:#e8b923;--b:#f5d77a;--grad:linear-gradient(120deg,#f5d77a,#d69a14);--r:16px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 "Hanken Grotesk",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--b);outline-offset:3px}
+.wrap{max-width:1160px;margin:auto;padding:0 20px}
+section{padding:88px 0}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.lead{color:var(--mute);max-width:560px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:12px;padding:12px 22px;font:600 15px inherit;cursor:pointer;color:#1b1404;background:var(--grad);transition:transform .15s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 30px #e8b92355}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}.btn.ghost:hover{box-shadow:none;border-color:var(--a)}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:#050a18cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font:800 18px "Bricolage Grotesque",sans-serif}
+.mark{width:34px;height:34px;border-radius:50%}.banner{display:block;width:100%;max-width:980px;height:auto;margin:48px auto 0;border-radius:20px;border:1px solid var(--line);box-shadow:0 30px 80px #e8b92318}
+.links{display:flex;gap:26px;align-items:center;color:var(--mute);font-weight:500}.links a:hover{color:var(--text)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;width:42px;height:38px;font-size:18px}
+/* hero */
+.hero{padding:96px 0 72px;position:relative;text-align:center}
+.hero:before{content:"";position:absolute;inset:-120px 0 auto;height:560px;background:radial-gradient(600px 300px at 30% 30%,#e8b92333,transparent),radial-gradient(500px 280px at 72% 40%,#2563eb33,transparent);z-index:-1}
+.hero h1{font-size:clamp(40px,7vw,78px);max-width:860px;margin:0 auto 20px}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mute);font-size:19px;max-width:600px;margin:0 auto 32px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ticker{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:44px;max-width:780px;margin-inline:auto}
+.ticker span{border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:6px 14px;font-size:14px;color:var(--mute);animation:float 5s ease-in-out infinite}
+.ticker span:nth-child(even){animation-delay:-2.5s}
+@keyframes float{50%{transform:translateY(-6px)}}
+/* dashboard */
+.dash{display:grid;grid-template-columns:270px 1fr;gap:20px;margin-top:36px}
+.list{display:flex;flex-direction:column;gap:6px}
+.tool{display:flex;gap:12px;align-items:center;text-align:left;width:100%;padding:12px 14px;border-radius:12px;border:1px solid transparent;background:none;color:var(--mute);font:500 15px inherit;cursor:pointer;transition:.15s}
+.tool:hover{background:var(--panel);color:var(--text)}
+.tool.on{background:var(--panel);border-color:var(--a);color:var(--text);box-shadow:inset 3px 0 0 var(--a)}
+.tool i{font-style:normal;width:34px;height:34px;border-radius:10px;background:#e8b92322;display:grid;place-items:center;flex:none}
+.work{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px;min-width:0}
+.work h3{font-size:26px}.work>p{color:var(--mute);margin:6px 0 20px}
+label{display:block;font-size:14px;font-weight:600;margin:0 0 6px}
+textarea,select,input{width:100%;background:#070d1f;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 14px;font:inherit}
+textarea{min-height:130px;resize:vertical}textarea:focus,select:focus,input:focus{outline:none;border-color:var(--a);box-shadow:0 0 0 3px #e8b92333}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:16px 0 20px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.out{margin-top:22px;border:1px dashed var(--line);border-radius:12px;padding:18px;min-height:110px;white-space:pre-wrap;word-break:break-word}
+.out.empty{color:var(--mute)}.out.err{border-color:#f87171;color:#fca5a5}
+.dots{display:inline-flex;gap:5px}.dots b{width:8px;height:8px;border-radius:50%;background:var(--a);animation:pulse 1s infinite}
+.dots b:nth-child(2){animation-delay:.15s}.dots b:nth-child(3){animation-delay:.3s}
+@keyframes pulse{50%{opacity:.2;transform:scale(.7)}}
+/* chat */
+.chat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);margin-top:32px;display:flex;flex-direction:column;height:560px;max-width:860px;margin-inline:auto}
+.msgs{flex:1;overflow-y:auto;padding:22px;display:flex;flex-direction:column;gap:12px}
+.m{max-width:85%;padding:11px 15px;border-radius:14px;white-space:pre-wrap;word-break:break-word}
+.m.u{align-self:flex-end;background:var(--grad);color:#1b1404;border-bottom-right-radius:4px}
+.m.a{align-self:flex-start;background:#121b36;border:1px solid var(--line);border-bottom-left-radius:4px}
+.m.e{border-color:#f87171;color:#fca5a5}
+.cbar{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line)}
+.cbar.ctl{flex-wrap:wrap;align-items:center;padding-top:10px}.cbar textarea{min-height:48px;height:48px;resize:none}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:36px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-size:19px;margin-bottom:8px}.card p{color:var(--mute);font-size:15px}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.stat b{display:block;font:800 34px "Bricolage Grotesque",sans-serif;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mute);font-size:14px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-top:12px;max-width:760px}
+summary{cursor:pointer;font-weight:600}details p{color:var(--mute);margin-top:10px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}form{display:grid;gap:14px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,80px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;transition:.25s;z-index:30}.toast.show{transform:translate(-50%,0)}
+@media(max-width:860px){
+ section{padding:64px 0}
+ .burger{display:block}
+ .links{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 20px;border-bottom:1px solid var(--line);gap:16px;align-items:flex-start}.links.open{display:flex}
+ .dash,.about,.contact{grid-template-columns:1fr}
+ .list{flex-direction:row;overflow-x:auto;padding-bottom:6px}.tool{width:auto;white-space:nowrap}.tool.on{box-shadow:none}
+ .work{padding:20px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+ <a class="logo" href="#home"><img class="mark" src="logo.png" alt="" width="34" height="34">Rafaqat Editors AI</a>
+ <button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+ <div class="links" onclick="this.classList.remove('open')">
+  <a href="#home">Home</a><a href="#chat">AI Chat</a><a href="#studio">Studio</a><a href="#tools">AI Tools</a><a href="#about">About</a><a href="#features">Features</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Contact</a>
+ </div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+ <h1>Smart AI Tools for <span>Creators</span></h1>
+ <p>Titles, hooks, scripts, captions and more. Ten focused tools that help video editors and YouTubers publish faster.</p>
+ <div class="cta"><a class="btn" href="#tools">Open the tools</a><a class="btn ghost" href="#features">See features</a></div>
+ <img class="banner" src="banner.jpg" alt="Rafaqat Editors AI: Smart AI Tools for Creators" width="1600" height="1067" fetchpriority="high">
+ <div class="ticker"><span>Titles</span><span>Hooks</span><span>Scripts</span><span>Hashtags</span><span>Thumbnails</span><span>Captions</span><span>Video ideas</span></div>
+</div></section>
+
+<section id="chat"><div class="wrap">
+ <h2>AI Chat</h2><p class="lead">Ask anything: video ideas, editing tips, scripts, or help with your channel. Works in English, Hindi and Urdu.</p>
+ <div class="chat"><div class="msgs" id="msgs"><div class="m a">Hi, I am Rafaqat AI. What are you working on today?</div></div>
+ <div class="cbar"><textarea id="ci" placeholder="Type or speak your message" aria-label="Message"></textarea><button class="btn" id="cs">Send</button></div>
+ <div class="cbar ctl"><button class="btn ghost" id="ca">📎 Photo</button><button class="btn ghost" id="cm">🎤 Speak</button><select id="cl2" aria-label="Voice language" style="width:auto"><option value="hi-IN">हिंदी</option><option value="ur-PK">اردو</option><option value="en-US">English</option></select><label style="display:flex;gap:6px;align-items:center;margin:0;font-weight:500"><input type="checkbox" id="sp" style="width:auto">Read replies aloud</label><button class="btn ghost" id="cc">Clear</button><input type="file" id="cf2" accept="image/*" hidden></div></div>
+</div></section>
+
+<section id="studio"><div class="wrap">
+ <h2>Creator Studio</h2><p class="lead">Free tools that run inside your browser. Your files are never uploaded.</p>
+ <div class="work" style="margin-top:32px"><div class="row" id="st"><button class="btn" data-t="p">Photo Studio</button><button class="btn ghost" data-t="v">Video Maker</button><button class="btn ghost" data-t="s">Voice Maker</button></div><br>
+ <div id="pane-p"><label for="pf">Choose a photo</label><input type="file" id="pf" accept="image/*">
+  <div class="opts"><div><label for="pb">Brightness</label><input type="range" id="pb" min="50" max="150" value="100"></div><div><label for="pc">Contrast</label><input type="range" id="pc" min="50" max="150" value="100"></div><div><label for="ps">Color</label><input type="range" id="ps" min="0" max="200" value="100"></div><div><label for="pt">Text on photo</label><input id="pt" value="Rafaqat Editors AI"></div></div>
+  <canvas id="pcv" style="max-width:100%;border-radius:12px;display:none"></canvas>
+  <div class="row" style="margin-top:14px"><button class="btn" id="pd">Download photo</button></div></div>
+ <div id="pane-v" hidden><label for="vf">Choose photos (hold Ctrl or select several)</label><input type="file" id="vf" accept="image/*" multiple>
+  <div class="opts"><div><label for="vc">Caption</label><input id="vc" placeholder="Optional text"></div><div><label for="vs">Seconds per photo</label><select id="vs"><option>2</option><option selected>3</option><option>5</option></select></div><div><label for="vo">Shape</label><select id="vo"><option value="v">Vertical (Reels, Shorts)</option><option value="h">Horizontal (YouTube)</option></select></div></div>
+  <button class="btn" id="vgo">Make video</button><div id="vout" style="margin-top:18px"></div></div>
+ <div id="pane-s" hidden><label for="vt">Text to speak</label><textarea id="vt" placeholder="Type or paste your text"></textarea>
+  <div class="opts"><div><label for="vl">Language</label><select id="vl"><option value="hi-IN">हिंदी</option><option value="ur-PK">اردو</option><option value="en-US">English</option></select></div><div><label for="vr">Speed</label><select id="vr"><option value="0.8">Slow</option><option value="1" selected>Normal</option><option value="1.25">Fast</option></select></div></div>
+  <div class="row"><button class="btn" id="vplay">Play voice</button><button class="btn ghost" id="vstop">Stop</button></div></div>
+ </div>
+</div></section>
+
+<section id="tools"><div class="wrap">
+ <h2>AI Tools</h2><p class="lead">Pick a tool, describe your video, and generate.</p>
+ <div class="dash"><div class="list" id="list" role="tablist"></div><div class="work" id="work"></div></div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+ <div><h2>About Rafaqat Editors AI</h2>
+ <p class="lead" style="max-width:none">Rafaqat Editors AI was built by people who edit video for a living. We know the slow parts of publishing: staring at a blank title box, rewriting the same description, hunting for hooks. These tools take care of that first draft so you can spend your time on the edit.</p></div>
+ <div class="stat"><div><b>10</b><span>Focused tools</span></div><div><b>0</b><span>Sign-ups required</span></div><div><b>1 click</b><span>To copy results</span></div><div><b>Any screen</b><span>Phone, tablet, desktop</span></div></div>
+</div></section>
+
+<section id="features"><div class="wrap">
+ <h2>Features</h2><p class="lead">Built to be quick, clear and out of your way.</p>
+ <div class="grid">
+  <div class="card"><h3>Made for creators</h3><p>Every tool is tuned for YouTube, Shorts, Reels and TikTok workflows.</p></div>
+  <div class="card"><h3>Useful options</h3><p>Set tone, length, platform and language so results fit your channel.</p></div>
+  <div class="card"><h3>Fast and light</h3><p>One small page with no heavy frameworks. It loads quickly on mobile data.</p></div>
+  <div class="card"><h3>Private by design</h3><p>API keys stay on the server. Nothing sensitive reaches your browser.</p></div>
+  <div class="card"><h3>Copy and go</h3><p>Copy any result in one tap, or clear the tool and start again.</p></div>
+  <div class="card"><h3>Works everywhere</h3><p>A layout that adapts from small phones to wide monitors.</p></div>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap"><h2>FAQ</h2>
+ <details><summary>Is Rafaqat Editors AI free to use?</summary><p>Yes, you can use the tools without creating an account.</p></details>
+ <details><summary>Can I post the results directly?</summary><p>Treat results as a strong first draft. Review and adjust them so they sound like you.</p></details>
+ <details><summary>Which platforms are supported?</summary><p>YouTube, YouTube Shorts, Instagram, TikTok, Facebook and X.</p></details>
+ <details><summary>Can it generate AI video, AI images or AI voice?</summary><p>Not yet. Today you can edit photos, turn photos into a slideshow video, and hear any text read aloud in Hindi, Urdu or English. The AI Chat and writing tools work with text and can describe photos you send.</p></details>
+ <details><summary>Can I download YouTube or TikTok videos here?</summary><p>No. Downloading other people's videos breaks those platforms' rules and copyright. Download your own videos from YouTube Studio or TikTok's Save video option.</p></details>
+ <details><summary>Is my text stored?</summary><p>This site does not save your input. It is sent to the AI provider only to produce your result.</p></details>
+ <details><summary>Why does a tool say the API key is missing?</summary><p>The site owner has not added the AI key yet. See the README for the one-minute setup.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+ <div><h2>Contact</h2><p class="lead">Questions, feedback or a tool you want added? Send a message.</p></div>
+ <form id="cf"><div><label for="n">Name</label><input id="n" required></div><div><label for="e">Email</label><input id="e" type="email" required></div><div><label for="m">Message</label><textarea id="m" required></textarea></div><button class="btn" type="submit">Send message</button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="y"></span> Rafaqat Editors AI. Smart AI Tools for Creators.</span><span><a href="#tools">Tools</a> &nbsp; <a href="#faq">FAQ</a> &nbsp; <a href="#contact">Contact</a></span></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const CONTACT_EMAIL="hello@example.com"; // replace with your address
+const PLAT=["YouTube","YouTube Shorts","Instagram","TikTok","Facebook","X"];
+const TONE=["Engaging","Professional","Funny","Dramatic","Educational"];
+const LEN=["Short","Medium","Long"];
+const O=(k,l,c)=>({k,l,c});
+const TOOLS=[
+ {id:"titles",n:"YouTube Title Generator",i:"▶",d:"Click-worthy titles for your next video.",ph:"What is your video about?",o:[O("Tone","Tone",TONE),O("Style","Style",["Curiosity","How-to","Listicle","Story"])]},
+ {id:"description",n:"Description Generator",i:"≡",d:"SEO-friendly video descriptions.",ph:"Video topic and key points",o:[O("Tone","Tone",TONE),O("Length","Length",LEN)]},
+ {id:"captions",n:"Caption Generator",i:"❝",d:"Captions that fit each platform.",ph:"Describe your post or video",o:[O("Platform","Platform",PLAT),O("Tone","Tone",TONE)]},
+ {id:"hashtags",n:"Hashtag Generator",i:"#",d:"Relevant hashtags to boost reach.",ph:"Topic or niche",o:[O("Platform","Platform",PLAT)]},
+ {id:"ideas",n:"Video Ideas Generator",i:"✦",d:"Fresh ideas when you are stuck.",ph:"Your niche or channel topic",o:[O("Format","Format",["Long video","Short","Series"]),O("Audience","Audience",["Beginners","Enthusiasts","General"])]},
+ {id:"script",n:"Script Generator",i:"✎",d:"Full scripts with hook and outro.",ph:"Topic and main points",o:[O("Length","Length",["1 minute","3 minutes","5 minutes","10 minutes"]),O("Tone","Tone",TONE)]},
+ {id:"hooks",n:"Hook Generator",i:"⚡",d:"Openers that stop the scroll.",ph:"What is the video about?",o:[O("Platform","Platform",PLAT),O("Tone","Tone",TONE)]},
+ {id:"thumbs",n:"Thumbnail Text Generator",i:"▣",d:"Short, bold thumbnail text.",ph:"Video title or topic",o:[O("Emotion","Emotion",["Curiosity","Shock","Excitement","Urgency"])]},
+ {id:"rewrite",n:"Content Rewriter",i:"↻",d:"Rewrite text in a fresh voice.",ph:"Paste the text to rewrite",o:[O("Tone","Tone",TONE),O("Length","Length",["Same","Shorter","Longer"])]},
+ {id:"summary",n:"Text Summarizer",i:"∑",d:"Condense long text quickly.",ph:"Paste the text to summarize",o:[O("Format","Format",["Paragraph","Bullet points"]),O("Length","Length",LEN)]}
+];
+const $=s=>document.querySelector(s);
+const toast=t=>{const e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),1800)};
+const list=$("#list"),work=$("#work");
+TOOLS.forEach((t,x)=>{const b=document.createElement("button");b.className="tool";b.role="tab";b.innerHTML=`<i>${t.i}</i>${t.n}`;b.onclick=()=>pick(x);list.append(b)});
+
+function pick(x){
+ const t=TOOLS[x];
+ [...list.children].forEach((b,j)=>b.classList.toggle("on",j===x));
+ work.innerHTML=`<h3></h3><p></p><label for="inp">Your input</label><textarea id="inp"></textarea>
+ <div class="opts">${t.o.map((o,j)=>`<div><label for="o${j}">${o.l}</label><select id="o${j}">${o.c.map(c=>`<option>${c}</option>`).join("")}</select></div>`).join("")}</div>
+ <div class="row"><button class="btn" id="go">Generate</button><button class="btn ghost" id="cp">Copy</button><button class="btn ghost" id="cl">Clear</button></div>
+ <div class="out empty" id="out" aria-live="polite">Your results will appear here.</div>`;
+ work.querySelector("h3").textContent=t.n;work.querySelector("p").textContent=t.d;$("#inp").placeholder=t.ph;
+ const out=$("#out"),go=$("#go");
+ const show=(txt,cls="")=>{out.className="out "+cls;out.textContent=txt};
+ go.onclick=async()=>{
+  const input=$("#inp").value.trim();
+  if(!input)return show("Enter some text first.","empty");
+  const options={};t.o.forEach((o,j)=>options[o.k]=$("#o"+j).value);
+  go.disabled=true;out.className="out";out.innerHTML='<span class="dots"><b></b><b></b><b></b></span> Generating…';
+  try{
+   const r=await fetch("/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({tool:t.id,input,options})});
+   const d=await r.json().catch(()=>({}));
+   if(!r.ok)throw new Error(d.error||"Something went wrong. Please try again.");
+   show(d.result||"No result returned. Try rewording your input.");
+  }catch(e){show(e.message.includes("fetch")?"Could not reach the server. Run the site with Wrangler or deploy it (see README).":e.message,"err")}
+  go.disabled=false;
+ };
+ $("#cp").onclick=async()=>{if(out.classList.contains("empty")||out.classList.contains("err")||!out.textContent.trim())return toast("Nothing to copy yet");try{await navigator.clipboard.writeText(out.textContent);toast("Copied")}catch{toast("Copy failed")}};
+ $("#cl").onclick=()=>{$("#inp").value="";show("Your results will appear here.","empty");$("#inp").focus()};
+}
+pick(0);
+const HI="Hi, I am Rafaqat AI. What are you working on today?";let hist=[],img=null,rec=null;
+const msgs=$("#msgs"),ci=$("#ci"),cs=$("#cs"),cm=$("#cm"),ca=$("#ca"),fi=$("#cf2");
+function add(t,c,src){const d=document.createElement("div");d.className="m "+c;if(src){const i=document.createElement("img");i.src=src;i.alt="Attached photo";i.style.cssText="max-width:100%;max-height:200px;border-radius:10px;display:block;margin-bottom:6px";d.append(i)}d.append(document.createTextNode(t));msgs.append(d);msgs.scrollTop=msgs.scrollHeight;return d}
+function say(t){if(!$("#sp").checked||!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=$("#cl2").value;speechSynthesis.speak(u)}
+async function send(){
+ const t=ci.value.trim();if((!t&&!img)||cs.disabled)return;
+ const text=t||"Please look at this photo and help me.";
+ ci.value="";add(text,"u",img);hist.push({role:"user",content:text,image:img});img=null;ca.textContent="📎 Photo";cs.disabled=true;
+ const w=add("…","a"),li=hist.map(m=>!!m.image).lastIndexOf(true);
+ try{
+  const messages=hist.map((m,i)=>({role:m.role,content:m.content,image:i===li?m.image:undefined}));
+  const r=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages})});
+  const d=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(d.error||"Something went wrong. Please try again.");
+  w.textContent=d.reply||"No reply. Try again.";hist.push({role:"assistant",content:w.textContent});say(w.textContent);
+ }catch(e){hist.pop();w.className="m a e";w.textContent=e.message.includes("fetch")?"Could not reach the server. Run the site with Wrangler or deploy it (see README).":e.message}
+ cs.disabled=false;msgs.scrollTop=msgs.scrollHeight;
+}
+cs.onclick=send;ci.onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();send()}};
+ca.onclick=()=>fi.click();
+fi.onchange=()=>{const f=fi.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,1024/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);img=c.toDataURL("image/jpeg",.8);ca.textContent="✓ Photo added";toast("Photo added. Now type your question.")};im.src=r.result};r.readAsDataURL(f);fi.value=""};
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+cm.onclick=()=>{
+ if(!SR)return toast("Voice needs Chrome or Edge");
+ if(rec){rec.stop();return}
+ rec=new SR();rec.lang=$("#cl2").value;rec.interimResults=false;
+ rec.onresult=e=>{ci.value=e.results[0][0].transcript;$("#sp").checked=true;send()};
+ rec.onend=()=>{rec=null;cm.textContent="🎤 Speak"};
+ rec.onerror=()=>toast("Could not hear you. Allow the microphone.");
+ cm.textContent="⏹ Listening…";rec.start();
+};
+$("#cc").onclick=()=>{hist=[];img=null;ca.textContent="📎 Photo";window.speechSynthesis&&speechSynthesis.cancel();msgs.innerHTML="";add(HI,"a")};
+const $$=q=>document.querySelectorAll(q);
+$$("#st button").forEach(b=>b.onclick=()=>{$$("#st button").forEach(x=>x.className="btn ghost");b.className="btn";["p","v","s"].forEach(k=>$("#pane-"+k).hidden=k!==b.dataset.t)});
+let pim=null;const pcv=$("#pcv");
+function wm(x,t,w,h){if(!t)return;const f=Math.round(w/22);x.font=`700 ${f}px sans-serif`;x.textAlign="right";x.shadowColor="#000a";x.shadowBlur=8;x.fillStyle="#fff";x.fillText(t,w-f,h-f);x.shadowBlur=0}
+function pdraw(){if(!pim)return;const k=Math.min(1,1600/Math.max(pim.width,pim.height)),w=pim.width*k,h=pim.height*k,x=pcv.getContext("2d");pcv.width=w;pcv.height=h;x.filter=`brightness(${$("#pb").value}%) contrast(${$("#pc").value}%) saturate(${$("#ps").value}%)`;x.drawImage(pim,0,0,w,h);x.filter="none";wm(x,$("#pt").value.trim(),w,h);pcv.style.display="block"}
+$("#pf").onchange=e=>{const f=e.target.files[0];if(!f)return;const i=new Image();i.onload=()=>{pim=i;pdraw()};i.src=URL.createObjectURL(f)};
+["#pb","#pc","#ps","#pt"].forEach(q=>$(q).oninput=pdraw);
+$("#pd").onclick=()=>{if(!pim)return toast("Choose a photo first");const a=document.createElement("a");a.download="rafaqat-editors-ai.png";a.href=pcv.toDataURL("image/png");a.click()};
+$("#vgo").onclick=async()=>{
+ const fs=[...$("#vf").files];if(!fs.length)return toast("Choose photos first");
+ if(!window.MediaRecorder)return toast("Use Chrome or Edge to make video");
+ const imgs=await Promise.all(fs.map(f=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.src=URL.createObjectURL(f)})));
+ const vert=$("#vo").value==="v",W=vert?720:1280,H=vert?1280:720,sec=+$("#vs").value,cap=$("#vc").value.trim(),c=document.createElement("canvas");c.width=W;c.height=H;const x=c.getContext("2d");
+ const rec=new MediaRecorder(c.captureStream(30)),ch=[];
+ rec.ondataavailable=e=>ch.push(e.data);
+ rec.onstop=()=>{const u=URL.createObjectURL(new Blob(ch,{type:"video/webm"}));$("#vout").innerHTML=`<video src="${u}" controls style="max-width:100%;max-height:480px;border-radius:12px"></video><p style="margin-top:12px"><a class="btn" href="${u}" download="rafaqat-editors-ai.webm">Download video</a></p>`;$("#vgo").disabled=false};
+ $("#vgo").disabled=true;$("#vout").textContent="Making your video…";rec.start();
+ const t0=performance.now(),total=imgs.length*sec*1000;
+ const tick=()=>{const t=performance.now()-t0;if(t>=total){rec.stop();return}
+  const i=Math.floor(t/(sec*1000)),p=(t%(sec*1000))/(sec*1000),im=imgs[i],k=Math.max(W/im.width,H/im.height)*(1+.06*p),w=im.width*k,h=im.height*k;
+  x.fillStyle="#000";x.fillRect(0,0,W,H);x.drawImage(im,(W-w)/2,(H-h)/2,w,h);
+  x.textAlign="center";x.shadowColor="#000c";x.shadowBlur=10;x.fillStyle="#fff";
+  if(cap){x.font=`700 ${W/16}px sans-serif`;x.fillText(cap,W/2,H*.82,W*.9)}
+  x.font=`600 ${W/32}px sans-serif`;x.fillText("Rafaqat Editors AI",W/2,H-W/30);x.shadowBlur=0;
+  requestAnimationFrame(tick)};tick();
+};
+$("#vplay").onclick=()=>{const t=$("#vt").value.trim();if(!t)return toast("Type some text first");if(!window.speechSynthesis)return toast("Voice is not supported here");speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=$("#vl").value;u.rate=+$("#vr").value;speechSynthesis.speak(u)};
+$("#vstop").onclick=()=>window.speechSynthesis&&speechSynthesis.cancel();
+$("#cf").onsubmit=e=>{e.preventDefault();const g=s=>encodeURIComponent($(s).value);location.href=`mailto:${CONTACT_EMAIL}?subject=${"Message from "+g("#n")}&body=${g("#m")}%0A%0A${g("#e")}`};
+$("#y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
