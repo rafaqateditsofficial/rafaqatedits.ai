@@ -1,0 +1,6 @@
+{
+  "name": "rafaqatedits-ai",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": { "directory": ".", "binding": "ASSETS" }
+}
